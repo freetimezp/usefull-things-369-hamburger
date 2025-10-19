@@ -9,3 +9,90 @@
 a {
     text-decoration: none;
 }
+
+body {
+    background: #d42d1b;
+}
+
+.toggle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+}
+
+.toggle span {
+    position: absolute;
+    display: block;
+    background: #fff;
+    width: 50%;
+    height: 12px;
+    transition: 0.5s;
+}
+
+.toggle span:nth-child(even) {
+    left: 50%;
+}
+
+.toggle span:nth-child(1),
+.toggle span:nth-child(2) {
+    top: 0;
+}
+
+.toggle span:nth-child(3),
+.toggle span:nth-child(4) {
+    top: 30px;
+}
+
+.toggle span:nth-child(5),
+.toggle span:nth-child(6) {
+    top: 60px;
+}
+
+.toggle.active span:nth-child(3) {
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+.toggle.active span:nth-child(4) {
+    transform: translateX(100px);
+    opacity: 0;
+}
+
+.toggle span:nth-child(1) {
+    transform-origin: top left;
+}
+.toggle span:nth-child(2) {
+    transform-origin: top right;
+}
+
+.toggle.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 7px;
+    left: 16px;
+}
+.toggle.active span:nth-child(2) {
+    transform: rotate(-45deg);
+    top: 7px;
+    left: calc(50% - 16px);
+}
+
+.toggle span:nth-child(5) {
+    transform-origin: bottom left;
+}
+.toggle span:nth-child(6) {
+    transform-origin: bottom right;
+}
+
+.toggle.active span:nth-child(5) {
+    transform: rotate(-45deg);
+    bottom: 7px;
+    left: 16px;
+}
+.toggle.active span:nth-child(6) {
+    transform: rotate(45deg);
+    bottom: 7px;
+    left: calc(50% - 16px);
+}
