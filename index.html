@@ -2,13 +2,26 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Project</title>
-    </head>
 
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <title>Comic Menu</title>
+    </head>
     <body>
+        <section class="hero">
+            <h1>SUPER MENU!</h1>
+
+            <p>Click the crazy burger button and watch the menu explode into action!</p>
+        </section>
+
         <div class="toggle">
             <span></span>
             <span></span>
@@ -16,10 +29,27 @@
             <span></span>
             <span></span>
             <span></span>
+
+            <ul class="menu">
+                <li>
+                    <a href="#"> <i class="ri-home-4-fill"></i> Home </a>
+                </li>
+
+                <li>
+                    <a href="#"> <i class="ri-team-fill"></i> Works </a>
+                </li>
+
+                <li>
+                    <a href="#"> <i class="ri-glasses-2-fill"></i> Jokes </a>
+                </li>
+
+                <li>
+                    <a href="#"> <i class="ri-chat-1-fill"></i> Contact </a>
+                </li>
+            </ul>
         </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-        <script src="./assets/js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
